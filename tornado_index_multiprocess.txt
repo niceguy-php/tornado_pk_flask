@@ -1,0 +1,55 @@
+ab -c 200 -n 100000 "http://180.163.232.105:9999/"
+This is ApacheBench, Version 2.3 <$Revision: 1430300 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 180.163.232.105 (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        TornadoServer/6.0.4
+Server Hostname:        180.163.232.105
+Server Port:            9999
+
+Document Path:          /
+Document Length:        12 bytes
+
+Concurrency Level:      200
+Time taken for tests:   26.137 seconds
+Complete requests:      100000
+Failed requests:        0
+Write errors:           0
+Total transferred:      20700000 bytes
+HTML transferred:       1200000 bytes
+Requests per second:    3826.06 [#/sec] (mean)
+Time per request:       52.273 [ms] (mean)
+Time per request:       0.261 [ms] (mean, across all concurrent requests)
+Transfer rate:          773.43 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2  42.8      0    1004
+Processing:     1   50  27.2     47     264
+Waiting:        1   50  27.2     46     264
+Total:          1   52  50.7     47    1109
+
+Percentage of the requests served within a certain time (ms)
+  50%     47
+  66%     60
+  75%     69
+  80%     74
+  90%     88
+  95%     98
+  98%    111
+  99%    124
+ 100%   1109 (longest request)
